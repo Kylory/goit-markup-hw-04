@@ -15,6 +15,15 @@ body {
   margin-left: auto;
 }
 
+.benefits .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-work .container {
+  padding-bottom: 94px;
+}
+
 /* Elements with display: flex */
 .nav,
 .links,
@@ -158,14 +167,12 @@ a:visited {
   text-align: center;
   height: 600px;
   padding-top: 200px;
-  margin-bottom: 94px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 30px;
-  max-width: 696px;
+  /* max-width: 696px; */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -203,10 +210,6 @@ a:visited {
   display: none;
 }
 
-.benefits {
-  margin-bottom: 94px;
-}
-
 .benefits-content {
   justify-content: space-between;
 }
@@ -231,7 +234,6 @@ a:visited {
 
 /* title - Чем мы занимаемся, Наша команда*/
 .our-work {
-  margin-bottom: 94px;
   text-align: center;
 }
 
@@ -329,9 +331,9 @@ footer {
 
 /* Портфоліо */
 .portfolio-container {
-  min-height: 1360px;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  /* min-height: 1360px; */
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Кнопки */
@@ -365,7 +367,6 @@ button:focus {
 
 .portfolio-cards {
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 
 .portfolio-cards .item a {

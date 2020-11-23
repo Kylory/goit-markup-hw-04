@@ -104,7 +104,8 @@ a:visited {
 /* Header */
 
 .nav {
-  height: 79px;
+  height: 80px;
+  border-bottom: 1px solid #ececec;
 }
 
 /* nav, titles, team-names, buttons */
@@ -115,6 +116,10 @@ a:visited {
 .team-name {
   color: var(--title-color);
 }
+
+/* .links .item {
+  height: 100%;
+} */
 
 .active-page {
   color: var(--blue-color);
@@ -132,11 +137,6 @@ a:visited {
 .nav {
   align-items: center;
   letter-spacing: 0.02em;
-}
-
-/* line between header and main */
-.header {
-  border-bottom: 1px solid #ececec;
 }
 
 .links .item + .item,
@@ -178,7 +178,6 @@ a:visited {
 
 .hero-title {
   margin-bottom: 30px;
-  /* max-width: 696px; */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;

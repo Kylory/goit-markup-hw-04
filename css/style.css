@@ -346,9 +346,11 @@ footer {
 /* Кнопки */
 .buttons {
   min-width: 611px;
-  min-height: 54px;
-  margin-bottom: 34px;
-  justify-content: center;
+  margin-bottom: 50px;
+  width: 611px;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 button {
@@ -387,7 +389,6 @@ button:focus {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  /* margin-bottom: 4px; */
 }
 
 /* Типи карток */

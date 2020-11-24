@@ -172,10 +172,16 @@ a:visited {
 
 /* hero */
 .hero {
+  display: flex;
+  justify-content: center;
   text-align: center;
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.hero .container {
+  max-width: 696px;
 }
 
 .hero-title {
@@ -413,9 +419,6 @@ button:focus {
 }
 
 .item .description {
-  width: 322px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 20px 24px;
+  height: 110px;
 }

@@ -164,8 +164,15 @@ a:visited {
   color: var(--text-color);
 }
 
-/* hero, footer background-color*/
-.hero,
+/* hero, footer background*/
+.hero {
+  background-color: #c4c4c4;
+  background-image: url(/images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .footer {
   background-color: #2f303a;
 }

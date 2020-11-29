@@ -325,11 +325,15 @@ a:visited {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-cards .description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin-top: 30px;
 }
 
 .team-employee {
@@ -451,7 +455,7 @@ button:focus {
   margin-bottom: 30px;
 }
 
-.item .description {
+.portfolio-cards .description {
   padding: 20px 24px;
   height: 110px;
 }

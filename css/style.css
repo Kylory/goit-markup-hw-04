@@ -38,7 +38,8 @@ img {
 .work-photo,
 .team-cards,
 .buttons,
-.portfolio-cards {
+.portfolio-cards,
+.header .container {
   display: flex;
 }
 
@@ -90,6 +91,8 @@ a:visited {
 
 .nav .logo {
   margin-right: 94px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 /* styles for "Studio" */
@@ -102,10 +105,13 @@ a:visited {
 }
 
 /* Header */
-
-.nav {
+.header {
   height: 80px;
   border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  text-align: center;
 }
 
 /* nav, titles, team-names, buttons */
@@ -115,12 +121,6 @@ a:visited {
 .team-title,
 .team-name {
   color: var(--title-color);
-}
-
-.nav a {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .active-page {
@@ -133,17 +133,24 @@ a:visited {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* nav */
 .nav {
   align-items: center;
-  letter-spacing: 0.02em;
 }
 
-.links .item + .item,
+/* .links .item + .item,
 .contacts .item + .item {
   margin-left: 50px;
+} */
+
+.links .item:not(:last-child),
+.contacts .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contacts {
@@ -165,15 +172,6 @@ a:visited {
 }
 
 /* hero, footer background*/
-/* .hero {
-  background-color: #c4c4c4;
-  background-image: url(/images/hero-background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1600px;
-} */
-
 .footer {
   background-color: #2f303a;
 }
@@ -181,7 +179,6 @@ a:visited {
 /* hero */
 .hero {
   display: flex;
-  /* justify-content: center; */
   text-align: center;
   height: 600px;
   max-width: 1600px;
@@ -386,10 +383,11 @@ button {
   line-height: 1.63;
   letter-spacing: 0.03em;
   padding: 6px 22px;
-  background-color: var(--white-color);
+  background-color: #f5f4fa;
   text-decoration: none;
-  border: none;
   cursor: pointer;
+  border: transparent;
+  border-radius: 4px;
 }
 
 button:hover,

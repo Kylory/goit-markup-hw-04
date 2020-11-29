@@ -458,4 +458,7 @@ button:focus {
 .portfolio-cards .description {
   padding: 20px 24px;
   height: 110px;
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-left: 1px solid #ececec;
 }

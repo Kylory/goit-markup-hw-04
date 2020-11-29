@@ -236,6 +236,11 @@ a:visited {
   color: black;
 }
 
+.button:active {
+  background-color: var(--blue-color);
+  color: white;
+}
+
 /* Преимущества */
 .hiden-title {
   display: none;

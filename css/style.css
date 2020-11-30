@@ -157,6 +157,17 @@ a:visited {
   margin-left: auto;
 }
 
+/* Decorative icons */
+.contacts .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-background {
+  padding: 25px 100px;
+}
+
 /* hover, focus in nav and contacts in header */
 .nav-link:hover,
 .nav-link:focus,

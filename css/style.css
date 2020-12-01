@@ -157,14 +157,6 @@ a:visited {
   margin-left: auto;
 }
 
-/* Decorative icons */
-.contacts .item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
 /* hover, focus in nav and contacts in header */
 .nav-link:hover,
 .nav-link:focus,
@@ -272,7 +264,6 @@ a:visited {
 .benefits .item {
   max-width: 270px;
 }
-
 
 .benefits-title {
   margin-bottom: 10px;
@@ -511,44 +502,49 @@ button:focus {
   border-left: 1px solid #ececec;
 }
 
-
 /* Декоративні іконки */
 /* зробити як inline-svg, зробити div і туди фон*/
 /* .benefits .item::before, */
+
+/* Icons in contacts in header*/
+.contacts .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Icons in benefits */
 .icon-background {
-  /* display: block; */
-  /* content: ""; */
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
   padding: 0;
-  /* background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; */
   margin-bottom: 30px;
   padding: 25px 100px;
 }
 
-.icon-details {
-  width: 70px;
-  height: 70px;
-}
-
 .team .social-links {
   display: flex;
-  /* align-content: center; */
+  align-items: center;
   justify-content: space-between;
 }
 
-.social-links li {
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
 }
 
-.social-links a {
-  display: block;
-  height: 100%;
-  border-radius: 50%;
-  background-color: wheat;
+.icons:hover {
+  fill: #fff;
+}
+
+.social-links a:hover {
+  background-color: var(--blue-color);
+  fill: #fff;
 }

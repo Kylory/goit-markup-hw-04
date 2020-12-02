@@ -345,13 +345,12 @@ a:visited {
   margin-top: 10px;
 }
 
-.social-links {
+.team-cards .social-links {
   width: 206px;
   height: 44px;
   margin-top: 16px;
   margin-right: auto;
   margin-left: auto;
-  /* outline: 1px solid black; */
 }
 
 /* Клієнти */
@@ -368,14 +367,23 @@ a:visited {
 .clients-list {
   display: flex;
   justify-content: space-between;
-  height: 90px;
-  outline: 1px solid black;
 }
 
-.clients-list .item {
+
+.clients-list a {
   width: 170px;
   height: 90px;
-  outline: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.clients-list a:hover {
+  fill: var(--blue-color);
+  border-color: var(--blue-color);
 }
 
 /* footer */
@@ -413,9 +421,28 @@ footer {
   margin-top: 9px;
 }
 
+/* social-links-footer */
+
+.social-links-footer {
+  width: 206px;
+  height: 80px;
+}
+
+.social-links-footer .title {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.72;
+  text-transform: uppercase;
+}
+
+.social-links-footer .links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Портфоліо */
 .portfolio-container {
-  /* min-height: 1360px; */
   padding-top: 94px;
   padding-bottom: 94px;
 }

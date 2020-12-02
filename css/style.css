@@ -110,9 +110,9 @@ a:visited {
   border-bottom: 1px solid #ececec;
 }
 
-.header .container {
+/* .header .container {
   text-align: center;
-}
+} */
 
 /* nav, titles, team-names, buttons */
 .nav-link,
@@ -136,6 +136,25 @@ a:visited {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.contacts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  fill: var(--text-color);
+}
+
+/* Icons in contacts in header*/
+.contacts .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-letter,
+.icon-smartphone {
+  margin-right: 10px;
 }
 
 /* nav */
@@ -163,6 +182,7 @@ a:visited {
 .contacts-header:hover,
 .contacts-header:focus {
   color: var(--blue-color);
+  fill: var(--blue-color);
 }
 
 .contacts-header,
@@ -241,9 +261,9 @@ a:visited {
   color: white;
 }
 
-/* Преимущества */
+/* Benefits */
 
-/* Прихований заголовок-універсальний */
+/* Hidden title - universal */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -279,6 +299,17 @@ a:visited {
   line-height: 1.71;
 }
 
+/* Icons in benefits */
+.icon-background {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 0;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
 /* title - Чем мы занимаемся, Наша команда*/
 .our-work {
   text-align: center;
@@ -300,7 +331,7 @@ a:visited {
   line-height: 1.17;
 }
 
-/* Команда */
+/* Team */
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -329,7 +360,6 @@ a:visited {
 
 .team-cards .description {
   padding-top: 30px;
-  /* padding-bottom: 30px; */
 }
 
 .team-name {
@@ -351,6 +381,28 @@ a:visited {
   margin-top: 16px;
   margin-right: auto;
   margin-left: auto;
+}
+
+/* Icons in team */
+.team .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+
+.social-links a:hover {
+  background-color: var(--blue-color);
+  fill: #fff;
 }
 
 /* Клієнти */
@@ -470,13 +522,13 @@ a:visited {
   align-items: center;
 }
 
-/* Портфоліо */
+/* Portfolio */
 .portfolio-container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-/* Кнопки */
+/* Buttons */
 .buttons {
   min-width: 611px;
   margin-bottom: 50px;
@@ -520,7 +572,7 @@ button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* Заголовки карток */
+/* Cards title */
 .portfolio-cards h2 {
   color: var(--title-color);
   font-weight: 700;
@@ -529,7 +581,7 @@ button:focus {
   letter-spacing: 0.06em;
 }
 
-/* Типи карток */
+/* Cards type */
 .portfolio-cards p {
   color: var(--text-color);
   font-weight: 400;
@@ -556,47 +608,4 @@ button:focus {
   border-bottom: 1px solid #ececec;
   border-right: 1px solid #ececec;
   border-left: 1px solid #ececec;
-}
-
-/* Декоративні іконки */
-/* зробити як inline-svg, зробити div і туди фон*/
-/* .benefits .item::before, */
-
-/* Icons in contacts in header*/
-.contacts .item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Icons in benefits */
-.icon-background {
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  padding: 0;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-}
-
-.team .social-links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.social-links a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  fill: #afb1b8;
-}
-
-.social-links a:hover {
-  background-color: var(--blue-color);
-  fill: #fff;
 }

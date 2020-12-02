@@ -369,14 +369,13 @@ a:visited {
   justify-content: space-between;
 }
 
-
 .clients-list a {
   width: 170px;
   height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
 }
@@ -387,10 +386,40 @@ a:visited {
 }
 
 /* footer */
-footer {
-  min-height: 252px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+.footer .container {
+  display: flex;
+}
+
+.footer {
+  border: 1px solid transparent;
+  height: 252px;
+}
+
+.foorer-all-contacts {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.social-links-footer {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+  margin-top: 72px;
+  margin-bottom: 100px;
+}
+
+.social-links-footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #fff;
+}
+
+.social-links-footer a:hover {
+  background-color: var(--blue-color);
 }
 
 .location {
@@ -422,7 +451,6 @@ footer {
 }
 
 /* social-links-footer */
-
 .social-links-footer {
   width: 206px;
   height: 80px;
@@ -433,11 +461,12 @@ footer {
   font-size: 14px;
   line-height: 1.72;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .social-links-footer .links-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -565,10 +594,6 @@ button:focus {
   height: 44px;
   border-radius: 50%;
   fill: #afb1b8;
-}
-
-.icons:hover {
-  fill: #fff;
 }
 
 .social-links a:hover {
